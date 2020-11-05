@@ -47,4 +47,14 @@ public class NoteViewModel extends AndroidViewModel {
         }
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    @NonNull
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
